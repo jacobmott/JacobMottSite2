@@ -1,0 +1,7 @@
+<ngb-carousel [pauseOnHover]=true [interval]=0>
+    <ng-template ngbSlide *ngFor="let img of images;">
+        <div class="wrapper">
+            <img src={{img.url}} alt="Angular Carousel 1" class="averageblock">
+        </div>
+    </ng-template>
+</ngb-carousel>
