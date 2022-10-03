@@ -6,13 +6,24 @@ Hosted @ https://jacobmott.io
 
 This is hosted in aws in s3 buckets, behind route53 and cloudfront distribution and has SSL certs setup 
 
-![Untitled](https://user-images.githubusercontent.com/3318539/193458267-ad29e01e-7ea1-4271-bea8-61804e165754.png)
+![FireShot Capture 030 - JacobMott io - jacobmott io](https://user-images.githubusercontent.com/3318539/193500644-8ce5c07d-7c4a-409e-8fbd-c80459d15efb.png)
+
+
+![image](https://user-images.githubusercontent.com/3318539/193500738-fa83e902-8cd0-4ea2-b020-83ab7ea6093a.png)
+
+![image](https://user-images.githubusercontent.com/3318539/193500776-69a819d8-833c-4726-9c04-e219947e6d49.png)
+
+![image](https://user-images.githubusercontent.com/3318539/193500799-6082c33e-1563-4769-93ef-85b7f867dde3.png)
+
+![image](https://user-images.githubusercontent.com/3318539/193500833-40d42601-4918-4689-8544-b179ff6adfc6.png)
+
+
 
 ## Features
 
 babylon.js 3d engine section (Eventually will display my 3d models im creating)
 
-angular carousel, currently showing a one of my repositories images from its readme (Im scraping data from github APIs to get these images)
+Swiper.js carousel, currently showing a one of my repositories images from its readme (Im scraping data from github APIs to get these images)
 
 Calling my API backend in aws that talks to github and returns info about my repos to view in the carousel
 
