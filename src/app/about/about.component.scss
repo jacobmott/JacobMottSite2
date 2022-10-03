@@ -1,0 +1,49 @@
+@import '../scss/my.scss';
+
+
+
+
+
+
+.linkoractionAbout {
+    color: rgba(206, 1, 1, 0.897);
+    text-align: center;
+}
+
+
+.purple {
+    color: rgb(223, 56, 223);
+    text-align: center;
+}
+
+.rounded23 {
+    border: 10px solid #ff1a1a;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: -10px;
+    margin-left: 70px;
+    width: 90%;
+}
+
+.rounded22 {
+    border: 10px solid #ffb3b3;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: -10px;
+    margin-left: 70px;
+    width: 90%;
+}
+
+.pinkbackWithRedText {
+    background-position: center;
+    background-size: contain;
+    background-color: #ffb3b3;
+    color: #ff1a1a;
+}
+
+.redbackWithWhiteText {
+    background-position: center;
+    background-size: contain;
+    background-color: #ff1a1a;
+    color: white;
+}

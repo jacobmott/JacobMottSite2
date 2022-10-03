@@ -19,10 +19,7 @@ export class MycarouselComponent implements OnInit {
   images: any[] = [];
   //posts$!: Observable<MypingGet200Response>;
   constructor(private defaultService: DefaultService, private sharedService: SharedService, private http:HttpClient) {
-    
-    this.defaultService
-      .gitReposGet()
-      .subscribe(console.log);
+  
 
   }
   //constructor(private service: GithubService) { }

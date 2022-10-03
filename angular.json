@@ -40,7 +40,8 @@
               "src/assets/textures/skybox/skybox_pz.jpg",
               "src/assets/textures/fire.png",
               "src/assets/textures/distortion.png",
-              "src/assets/textures/candleopacity.png"                            
+              "src/assets/textures/candleopacity.png",
+              "src/assets/linkedin.png"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -60,7 +61,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "24kb"
                 }
               ],
               "fileReplacements": [

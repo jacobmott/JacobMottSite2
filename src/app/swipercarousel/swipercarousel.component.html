@@ -1,0 +1,10 @@
+<swiper *ngIf="!imagesNotLoadedYet" [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="'auto'" [coverflowEffect]="{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    }" [pagination]="myPagination">
+    <ng-template swiperSlide *ngFor="let img of images;"><img src={{img.url}} /></ng-template>
+</swiper>
+<app-spinner *ngIf="imagesNotLoadedYet" message='Loading Repo Images'></app-spinner>

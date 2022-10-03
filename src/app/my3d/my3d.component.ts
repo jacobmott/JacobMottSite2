@@ -17,11 +17,14 @@ export class My3dComponent implements AfterViewInit {
   @Input() height: number = 500;
   @Input() width: number = 400;
   @Input() meshName: string = "GreenDragon2.9.glb";
+  @Input() camXPos: number = 0;
   @Input() camZPos: number = -10;
   @Input() camYPos: number = 5;
   @Input() makeFire: boolean = false;
   @Input() makeRain: boolean = false;
-
+  @Input() camYTargetPos: number = 0;
+  @Input() camXTargetPos: number = 0;
+  @Input() meshName2: string = "";
 
 
   @ViewChild('myCanvas')
@@ -38,6 +41,7 @@ export class My3dComponent implements AfterViewInit {
   private light!: HemisphericLight;
   private mesh!: Mesh;
   private flames!: Mesh;
+  private mesh2!: Mesh;
 
   constructor() { }
 
@@ -52,12 +56,12 @@ export class My3dComponent implements AfterViewInit {
     // This creates a basic Babylon Scene object (non-mesh)
     this.scene = new Scene(this.engine);
     // This creates and positions a free camera (non-mesh)
-    this.camera = new FreeCamera("camera1", new Vector3(0, this.camYPos, this.camZPos), this.scene);
+    this.camera = new FreeCamera("camera1", new Vector3(this.camXPos, this.camYPos, this.camZPos), this.scene);
     this.camera.maxZ = 100000;
     this.camera.minZ = -100000;
     // This targets the camera to scene origin
-    let vec = new Vector3(0, this.camYPos, 0);
-    this.camera.setTarget(Vector3.Zero());
+    let vec = new Vector3(this.camXTargetPos, this.camYTargetPos, 0);
+    this.camera.setTarget(vec);
     // This attaches the camera to the canvas
     this.camera.attachControl(this.canvas, true);
     // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
@@ -87,6 +91,19 @@ export class My3dComponent implements AfterViewInit {
       },
       function (error) { console.log("Error Loading mesh!"); console.log(JSON.stringify(error)); }
     );
+
+
+    if (this.meshName2.length > 0) {
+      let Promise2 = this.loadCharacter(this.meshName2);
+      let mesh2 = this.mesh2;
+      Promise2.then(
+        function (result) {
+          console.log("Loaded mesh2!"); mesh2 = result.mesh; mesh2.position.y = 1;
+          mesh2.position.x = 20;
+        },
+        function (error) { console.log("Error Loading mesh2!"); console.log(JSON.stringify(error)); }
+      );
+    }
 
 
     //let Promise2 = this.loadCharacter("fire2.glb");
@@ -244,6 +261,25 @@ export class My3dComponent implements AfterViewInit {
         partSystem3.start();
       });
     }
+
+    //let theCamera = this.camera;
+    //let theScene = this.scene;
+    //scene.onKeyboardObservable.add(e => {
+    //  console.log("event type? "+e.event.type);
+    //  console.log("event key? "+e.event.key);
+    //  switch (e.event.type) {
+    //    case 'keyup':
+    //      switch (e.event.key) {
+    //        case 'a':
+    //          let forwardDirection: Vector3 = theScene.activeCamera?.getForwardRay(3).direction!;
+    //          theCamera.position.addInPlace(forwardDirection);
+    //          break;
+    //      }
+    //      break;
+    //  }
+//
+    //});
+    scene.defaultMaterial.backFaceCulling = false;
 
     //// Create fire material
     //var fire = new FireMaterial("fire", this.scene);

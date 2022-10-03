@@ -1,9 +1,11 @@
-<ng-scrollbar class="my-scrollbar" [autoHeightDisabled]="true" visibility="always" position="invertY" track="all" style="height: 500px">
+<ng-scrollbar id="ng-srollingmylist" class="my-scrollbar" [autoHeightDisabled]="true" visibility="always" position="invertY" track="all"
+    style="height: 100%">
     <mat-list role="list">
-        <mat-list-item *ngFor="let repo of repos" (click)="onRowClicked($event, repo)"
-            [ngClass]="{'linkoraction2 col-sm-12': !getClassStyle(repo, false),'currentSelection col-sm-12': getClassStyle(repo, false), 'currentSelection2 col-sm-12': !getClassStyle(repo, true)}"
-            role="listitem ">
-            <img class="col-sm-1" src="assets/githubicon.png" alt="github">&nbsp;{{repo.name}}
+        <mat-list-item *ngFor="let repo of repos" (click)="onRowClicked($event, repo)" role="listitem ">
+            <div
+                [ngClass]="{'linkoraction2 col-sm-12': true,'currentSelection': getClassStyle(repo, false), 'currentSelection2': !getClassStyle(repo, true)}">
+                <p class="normalFont"><img align="left" src="assets/githubicon.png" height="25px" width="25px" alt="github">{{repo.name}}</p>
+            </div>
         </mat-list-item>
     </mat-list>
 </ng-scrollbar>

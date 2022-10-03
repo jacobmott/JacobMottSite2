@@ -13,6 +13,7 @@ import {
 
 import {MatListModule} from '@angular/material/list'; 
 
+import { SwiperModule } from "swiper/angular";
 
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
@@ -24,6 +25,12 @@ import { MylistComponent } from './mylist/mylist.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { GithubService } from './github.service';
 //import { DefaultService } from 'jacob-mott-site'
+
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { AboutComponent } from './about/about.component';
+import { SlideoutComponent } from './slideout/slideout.component';
+import { SwipercarouselComponent } from './swipercarousel/swipercarousel.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -38,7 +45,11 @@ export function apiConfigFactory(): Configuration {
     AppComponent,
     MycarouselComponent,
     My3dComponent,
-    MylistComponent
+    MylistComponent,
+    AboutComponent,
+    SlideoutComponent,
+    SwipercarouselComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +61,9 @@ export function apiConfigFactory(): Configuration {
     HttpClientModule,
     BrowserAnimationsModule,
     MatListModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    AngularFullpageModule,
+    SwiperModule
   ],
   providers: [
     //GithubService,

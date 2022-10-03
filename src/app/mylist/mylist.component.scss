@@ -12,43 +12,42 @@ mat-list {
 
 
 .my-scrollbar {
-    --scrollbar-border-radius: 7px;
-    --scrollbar-padding: 4px;
+    --scrollbar-border-radius: 4px;
+    --scrollbar-padding: 0px;
     --scrollbar-viewport-margin: 0;
     --scrollbar-track-color: transparent;
     --scrollbar-wrapper-color: transparent;
-    --scrollbar-thumb-color: rgba(206, 1, 1, 0.897);
+    --scrollbar-thumb-color: #4367aa;
     --scrollbar-thumb-hover-color: var(--scrollbar-thumb-color);
-    --scrollbar-size: 10px;
+    --scrollbar-size: 5px;
     --scrollbar-hover-size: var(--scrollbar-size);
     --scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
     --scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
 }
 
 
-.linkoraction2{
-    color: rgba(206, 1, 1, 0.897);
-    text-align: center;
+.linkoraction2 {
+    color: black;
+    text-align: left;
 }
 
-
-mat-list-item:hover {
+.linkoraction2:hover {
     font-weight: bold;
-    background-color: #292929;
+    background-color: #4367aa;
 }
+
 
 .currentSelection {
     font-weight: bold;
-    color: rgba(206, 1, 1, 0.897);
-    background-color: #545454;
-    text-align: center;
+    color: #e2e5ee;
+    background-color: #4367aa;
+    text-align: left;
 }
 
 
 .currentSelection2 {
     font-weight: bold;
-    color: rgba(206, 1, 1, 0.897);
-    background-color: #969191;
-    text-align: center;
+    color: black;
+    background-color: #759cd1;
+    text-align: left;
 }
-

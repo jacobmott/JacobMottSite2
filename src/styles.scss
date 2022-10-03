@@ -1,10 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/scss/my.scss';
-@import "~bootstrap/dist/css/bootstrap.css"; 
-@import "~font-awesome/css/font-awesome.css";  
-
-
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import url(~fullpage.js/dist/fullpage.min.css);
+@import "./app/scss/spinner.scss";
 
 // test
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+.fill-height {
+    min-height: 100%;
+    height: auto !important;
+    /* cross-browser */
+    height: 100%;
+    /* cross-browser */
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
