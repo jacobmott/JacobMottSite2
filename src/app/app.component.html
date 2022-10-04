@@ -1,25 +1,28 @@
-<ul id="menu">
-  <li data-menuanchor="firstPage" class="normalFont"><a href="#firstPage">Git Repos</a></li>
-  <li data-menuanchor="secondPage" class="normalFont"><a href="#secondPage">Meet the Site Admins, Bob And Axel, the dragons</a></li>
-  <li data-menuanchor="thirdPage" class="normalFont"><a href="#thirdPage">About</a></li>
+<ul id="menu" class="normalFont">
+  <li data-menuanchor="firstPage"><a href="#firstPage">Git Repos</a></li>
+  <li data-menuanchor="secondPage"><a href="#secondPage">Meet the Site Admins</a></li>
+  <li data-menuanchor="thirdPage"><a href="#thirdPage">About</a></li>
 </ul>
 
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
+<div fullpage id="fullpage">
 
-
+  <app-slideout>
+  </app-slideout>
 
   <div class="section">
-    <app-slideout>
-    </app-slideout>
+
     <div class="slide">
       <!-- <app-mycarousel class="app-mycarouselclass" id="mytopcarousel"></app-mycarousel> -->
-      <app-swipercarousel></app-swipercarousel>
+      <app-swipercarousel  id="mytopcarousel"></app-swipercarousel>
     </div>
     <div class="slide">
       <app-my3d id="mytopapp-my3d" meshName='basefemale.glb' [camZPos]=-10 [makeFire]="false" [makeRain]="true">
       </app-my3d>
     </div>
   </div>
+
+
+
 
 
   <div class="section">
@@ -45,9 +48,8 @@
 
 
   <div class="section">
-      <app-about></app-about>
+    <app-about></app-about>
   </div>
-
 
 
   <!-- 

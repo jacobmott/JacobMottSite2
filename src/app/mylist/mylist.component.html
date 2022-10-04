@@ -1,6 +1,6 @@
-<ng-scrollbar id="ng-srollingmylist" class="my-scrollbar" [autoHeightDisabled]="true" visibility="always" position="invertY" track="all"
+<ng-scrollbar  *ngIf="!listNotLoadedYet" id="ng-srollingmylist" class="my-scrollbar" [autoHeightDisabled]="true" visibility="always" position="invertY" track="all"
     style="height: 100%">
-    <mat-list role="list">
+    <mat-list role="list" >
         <mat-list-item *ngFor="let repo of repos" (click)="onRowClicked($event, repo)" role="listitem ">
             <div
                 [ngClass]="{'linkoraction2 col-sm-12': true,'currentSelection': getClassStyle(repo, false), 'currentSelection2': !getClassStyle(repo, true)}">
@@ -9,3 +9,4 @@
         </mat-list-item>
     </mat-list>
 </ng-scrollbar>
+<app-spinner *ngIf="listNotLoadedYet" whatClass='newClass2' message='Loading Repos list' class="forceLeft"></app-spinner>    

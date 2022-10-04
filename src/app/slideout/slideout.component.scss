@@ -1,35 +1,16 @@
 .slideout {
     position: fixed;
-    width: 80%;
-    height: 80%;
+    width: 800px;
+    height: 800px;
     left: 100%;
-    top: 5%;
+    top: 8%;
     transition: left .3s ease-out;
     z-index: 1000;
 }
 
 .slideout.active {
-    left: 80%;
+    left: 70%;
     z-index: 1000;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .slideout.active {
-        left: 20%;
-        z-index: 1000;
-    }
-
-    .slideout {
-        position: fixed;
-        width: 80%;
-        height: 80%;
-        left: 100%;
-        top: 25%;
-        transition: left .3s ease-out;
-        z-index: 1000;
-    }
-
 }
 
 .handle {
@@ -42,7 +23,6 @@
     background: #4367aa;
     cursor: pointer;
 }
-
 .mybody {
     position: absolute;
     background: #e2e5ee;
@@ -50,6 +30,89 @@
     height: 100%;
     border-radius: 8px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .slideout.active {
+        left: 60%;
+        z-index: 1000;
+    }
+
+    .slideout {
+        position: fixed;
+        width: 400px;
+        height: 600px;
+        left: 100%;
+        top: 8%;
+        transition: left .3s ease-out;
+        z-index: 1000;
+    }
+
+    .handle {
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #4367aa;
+        cursor: pointer;
+    }
+    
+    .mybody {
+        position: absolute;
+        background: #e2e5ee;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .slideout.active {
+        left: 40%;
+        z-index: 1000;
+    }
+
+    .slideout {
+        position: fixed;
+        width: 400px;
+        height: 600px;
+        left: 100%;
+        top: 8%;
+        transition: left .3s ease-out;
+        z-index: 1000;
+    }
+
+    .handle {
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #4367aa;
+        cursor: pointer;
+    }
+    
+    .mybody {
+        position: absolute;
+        background: #e2e5ee;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+
+}
+
+
 
 
 

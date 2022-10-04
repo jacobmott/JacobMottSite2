@@ -12,19 +12,21 @@ export class MylistComponent implements OnInit {
   classStyle!: boolean;
   repos: any = [];
   currentRepo: string = "ARTBlenderLowPolyCharacters";
-
+  listNotLoadedYet: boolean = true;
 
   constructor(private sharedService: SharedService, private http:HttpClient) { }
 
   ngOnInit(): void {
 
     this.http.get<any>('https://syb32bcis4.execute-api.us-east-1.amazonaws.com/prod/gitRepos').subscribe(data => {
+      this.listNotLoadedYet = true;
       let myList = data.list;
       let repos = this.repos;
       myList.forEach(function (value:any) {
         repos.push({'name':value.name});
       });
       this.sharedService.push({name: this.currentRepo});
+      this.listNotLoadedYet = false;      
     }); 
 
 

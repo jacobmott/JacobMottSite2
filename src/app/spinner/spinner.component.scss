@@ -1,7 +1,18 @@
 @import '../scss/spinner';
 
-.newclass{
-    height:100%;
-    position:relative;
-    width:100%;
+.newClass2 {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    float: left;
 }
+
+
+.newClass {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: 800px;
+    position: relative;
+}
+

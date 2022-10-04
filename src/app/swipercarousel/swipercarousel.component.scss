@@ -18,10 +18,15 @@
 }
 
 
+.makeHigh{
+    height: 500px;
+    width: 500px;
+}
+
 .swiper-slide img {
     display: block;
-    max-width: 1200px;
-    max-height: 800px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     margin-left: auto;
@@ -36,12 +41,10 @@
         height: 60%;
     }
 
-
-
     .swiper-slide img {
         display: block;
-        max-width: 500px;
-        max-height: 300px;
+        max-width: 100%;
+        max-height: 100%;
         width: auto;
         height: auto;
         margin-left: auto;

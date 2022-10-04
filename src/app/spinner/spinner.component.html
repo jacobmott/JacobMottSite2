@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="row newclass">
+<div>
+    <div [class]="whatClass">
         <div id="loader">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -10,10 +10,11 @@
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="loading"></div>
+            <p class="spinner-message normalFont" *ngIf="message && message !== ''">
+                {{message}}
+            </p>            
         </div>
 
-        <p class="spinner-message normalFont" *ngIf="message && message !== ''">
-            {{message}}
-        </p>
+
     </div>
 </div>

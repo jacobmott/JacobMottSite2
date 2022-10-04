@@ -25,6 +25,25 @@ mat-list {
     --scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
 }
 
+.forceLeft {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 10%;
+    display: flex;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .forceLeft {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        height: 10%;        
+        display: flex;
+    }
+}
 
 .linkoraction2 {
     color: black;

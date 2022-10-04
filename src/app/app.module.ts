@@ -26,7 +26,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { GithubService } from './github.service';
 //import { DefaultService } from 'jacob-mott-site'
 
-import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { AboutComponent } from './about/about.component';
 import { SlideoutComponent } from './slideout/slideout.component';
 import { SwipercarouselComponent } from './swipercarousel/swipercarousel.component';
@@ -39,8 +38,7 @@ export function apiConfigFactory(): Configuration {
   return new Configuration(params);
 }
 
-
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     MycarouselComponent,
@@ -62,7 +60,6 @@ export function apiConfigFactory(): Configuration {
     BrowserAnimationsModule,
     MatListModule,
     NgScrollbarModule,
-    AngularFullpageModule,
     SwiperModule
   ],
   providers: [

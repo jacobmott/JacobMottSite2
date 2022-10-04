@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideoutComponent implements OnInit {
 
+  
+
   slideout: boolean = false;
 
   constructor() { }

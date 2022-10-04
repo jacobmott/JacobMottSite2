@@ -64,23 +64,24 @@
     margin: 0;
 }
 
+.sizecorrectly {
+    font-size: 14px;
+}
 
 
+@media only screen and (max-width: 600px) {
+
+    .sizecorrectly {
+        font-size: 10px;
+    }
 
 
-
-
-.app-mycarouselclass{
-
-    width: 80%;
-    height: 80%;    
 }
 
 
 
+.app-mycarouselclass {
 
-
-
-
-
-  
+    width: 80%;
+    height: 80%;
+}

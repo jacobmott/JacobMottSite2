@@ -1,13 +1,4 @@
-#loader {
-    bottom: 0;
-    height: 175px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 175px;
-}
+
 
 #loader {
     bottom: 0;
@@ -142,4 +133,75 @@
 
 .spinner-message {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #loader {
+        bottom: 0;
+        height: 100px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+    }
+    
+    #loader .dot {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 47.5px;
+    }
+    
+    #loader .dot::before {
+        border-radius: 100%;
+        content: "";
+        height: 47.5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(0);
+        width: 47.5px;
+    }
+
+
+
+
+
+    #loader .loading {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        bottom: -40px;
+        height: 10px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 90px;
+    }
+
+
 }

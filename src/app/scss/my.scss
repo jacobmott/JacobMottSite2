@@ -12,6 +12,9 @@
     margin: 0px;
 }
 
+.xSmallFont {
+    font-size: 10px;
+}
 
 .normalFont {
     font-size: 14px;
@@ -25,6 +28,39 @@
 .largeFont {
     font-size: 24px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .xSmallFont {
+        font-size: 8px;
+    }
+    
+    .normalFont {
+        font-size: 10px;
+    }
+    
+    .mediumFont {
+        font-size: 14px;
+    }
+    
+    
+    .largeFont {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
 
 .paddedtb {
     padding-top: 100px;

@@ -7,4 +7,4 @@
     }" [pagination]="myPagination">
     <ng-template swiperSlide *ngFor="let img of images;"><img src={{img.url}} /></ng-template>
 </swiper>
-<app-spinner *ngIf="imagesNotLoadedYet" message='Loading Repo Images'></app-spinner>
+<app-spinner *ngIf="imagesNotLoadedYet" whatClass='newClass' message='Loading Repo Images'></app-spinner>
