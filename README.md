@@ -7,12 +7,10 @@ Hosted @ https://jacobmott.io
 This is hosted in aws in s3 buckets, behind route53 and cloudfront distribution and has SSL certs setup 
 ![image](https://user-images.githubusercontent.com/3318539/194075523-e283eb4c-6b9e-4743-887b-f622139c24e6.png)
 
+![image](https://user-images.githubusercontent.com/3318539/194075778-6a6a7476-f5b8-43fa-b8bd-90f00890f18c.png)
 
-![FireShot Capture 030 - JacobMott io - jacobmott io](https://user-images.githubusercontent.com/3318539/193500644-8ce5c07d-7c4a-409e-8fbd-c80459d15efb.png)
+![image](https://user-images.githubusercontent.com/3318539/194075918-6806861d-2a7f-47ab-98ba-9fc3c94af1c4.png)
 
-![image](https://user-images.githubusercontent.com/3318539/193502169-6c17ffe4-2750-43bf-a47e-fa52b7237c78.png)
-
-![image](https://user-images.githubusercontent.com/3318539/193500738-fa83e902-8cd0-4ea2-b020-83ab7ea6093a.png)
 
 
 ![image](https://user-images.githubusercontent.com/3318539/193500776-69a819d8-833c-4726-9c04-e219947e6d49.png)
