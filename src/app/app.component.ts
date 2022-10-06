@@ -20,7 +20,7 @@ export class AppComponent implements AfterViewInit, OnInit{
     this.config = {
 
       // fullpage options
-      licenseKey: '96NKK-U7RAJ-QKU57-D97J9-LCCKN',
+      licenseKey: '',
       anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
       menu: '#menu',
       navigation: true,
@@ -33,7 +33,7 @@ export class AppComponent implements AfterViewInit, OnInit{
       fitToSection: true,
       controlArrows: true,
       continuousVertical: true,
-      scrollHorizontallyKey: 'OTJhbUZqYjJKdGIzUjBMbWx2ZklfcjhJYzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MnY3',
+      scrollHorizontallyKey: '',
       // events callback
       afterLoad: (origin: any, destination: any, direction: any) => {
         // console.log(destination);

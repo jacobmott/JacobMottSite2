@@ -42,19 +42,22 @@
               "src/assets/textures/distortion.png",
               "src/assets/textures/candleopacity.png",
               "src/assets/linkedin.png",
-              "src/assets/scrollHorizontally/fullpage.scrollHorizontally.min.js"
+              "src/assets/scrollHorizontally/fullpage.scrollHorizontally.min.js",
+              "src/assets/BabylonControlsGUI.png",
+              "src/assets/BabylonControlsGUI2.png"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/fullpage.js/dist/fullpage.css"
+              "node_modules/fullpage.js/dist/fullpage.css",
+              "src/app/scss/all-navigations/story-telling.css"
             ],
             "scripts": [
               "src/assets/scrollHorizontally/fullpage.scrollHorizontally.min.js",
               "node_modules/fullpage.js/dist/fullpage.extensions.min.js",
               "node_modules/fullpage.js/vendors/easings.min.js",
-              "node_modules/jquery/dist/jquery.min.js"         
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -63,7 +66,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "5mb"
+                  "maximumError": "6mb"
                 },
                 {
                   "type": "anyComponentStyle",

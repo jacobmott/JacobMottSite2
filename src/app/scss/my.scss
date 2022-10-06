@@ -147,7 +147,15 @@ blackbg {
 }
 
 
+.fp-controlArrow.fp-next {
 
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    border-left-color: #4367aa !important;
+    top:70%;
+
+}
 
 
 .fp-controlArrow.fp-prev {
@@ -155,7 +163,8 @@ blackbg {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
     animation: pulse 2s infinite;
-
+    border-right-color: #4367aa !important;
+    top: 70%;
 }
 
 

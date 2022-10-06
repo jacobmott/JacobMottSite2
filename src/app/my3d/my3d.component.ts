@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { ParticleHelper, Material, ShadowDepthWrapper, SpotLight, ShadowGenerator, Color3, Texture, CubeTexture, DynamicTexture, StandardMaterial, Scene, Engine, FreeCamera, Vector3, Mesh, HemisphericLight, MeshBuilder, Vector2, IWheelEvent, Axis, PointerEventTypes, Matrix, Quaternion, SceneLoader, AbstractMesh, ParticleSystem } from '@babylonjs/core';
 import "@babylonjs/loaders/glTF";
-import { AdvancedDynamicTexture, TextBlock, } from "@babylonjs/gui";
+import { AdvancedDynamicTexture, TextBlock, Image, Control } from "@babylonjs/gui";
 import { FireMaterial } from '@babylonjs/materials';
 import { Nullable } from '@babylonjs/core/types'
 
@@ -42,6 +42,7 @@ export class My3dComponent implements AfterViewInit {
   private mesh!: Mesh;
   private flames!: Mesh;
   private mesh2!: Mesh;
+  private loadedGUI!: AdvancedDynamicTexture;
 
   constructor() { }
 
@@ -105,6 +106,16 @@ export class My3dComponent implements AfterViewInit {
       );
     }
 
+
+
+    let Promise3 = this.loadGUI();
+    let loadedGUI1 = this.loadedGUI;
+    Promise3.then(
+      function (result) {
+        console.log("Loaded GUI!"); loadedGUI1 = result;
+      },
+      function (error) { console.log("Error Loading GUI!"); console.log(JSON.stringify(error)); }
+    );
 
     //let Promise2 = this.loadCharacter("fire2.glb");
     //let flames = this.flames;
@@ -396,6 +407,22 @@ export class My3dComponent implements AfterViewInit {
 
 
 
+  private async loadGUI(){
+    let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("GUI", true, this.scene);  
+    let loadedGUI = await advancedTexture.parseFromSnippetAsync("M43ZA9#21");
+
+    var image = new Image("UI", "assets/BabylonControlsGUI2.png");
+    image.width = 1;
+    image.height = 1;
+    image.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_LEFT;
+    image.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP;    
+    image.top = "20%";
+    image.left = "10%";
+    //loadedGUI.
+    //loadedGUI.addControl(image);    
+
+    return advancedTexture;
+  }
 
 
   private async loadCharacter(meshToLoad: string) {
