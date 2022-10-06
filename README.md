@@ -5,6 +5,12 @@
 Hosted @ https://jacobmott.io
 
 This is hosted in aws in s3 buckets, behind route53 and cloudfront distribution and has SSL certs setup 
+
+![image](https://user-images.githubusercontent.com/3318539/194229686-bf4f5b78-bc11-4770-82c9-419f2250d898.png)
+
+![image](https://user-images.githubusercontent.com/3318539/194229760-35b2610d-21bb-4148-b28a-199eaa8bd7bb.png)
+
+
 ![image](https://user-images.githubusercontent.com/3318539/194075523-e283eb4c-6b9e-4743-887b-f622139c24e6.png)
 
 ![image](https://user-images.githubusercontent.com/3318539/194075778-6a6a7476-f5b8-43fa-b8bd-90f00890f18c.png)
