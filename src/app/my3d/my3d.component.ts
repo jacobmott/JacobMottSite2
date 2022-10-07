@@ -409,19 +409,19 @@ export class My3dComponent implements AfterViewInit {
 
   private async loadGUI(){
     let advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI("GUI", true, this.scene);  
-    let loadedGUI = await advancedTexture.parseFromSnippetAsync("M43ZA9#21");
+    let loadedGUI = await advancedTexture.parseFromSnippetAsync("M43ZA9#32", true);
 
-    var image = new Image("UI", "assets/BabylonControlsGUI2.png");
-    image.width = 1;
-    image.height = 1;
-    image.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_LEFT;
-    image.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP;    
-    image.top = "20%";
-    image.left = "10%";
+    //var image = new Image("UI", "assets/BabylonControlsGUI2.png");
+    //image.width = 1;
+    //image.height = 1;
+    //image.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_LEFT;
+    //image.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP;    
+    //image.top = "20%";
+    //image.left = "10%";
     //loadedGUI.
     //loadedGUI.addControl(image);    
 
-    return advancedTexture;
+    return loadedGUI;
   }
 
 
