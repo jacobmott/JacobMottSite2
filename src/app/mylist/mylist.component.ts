@@ -11,7 +11,7 @@ export class MylistComponent implements OnInit {
 
   classStyle!: boolean;
   repos: any = [];
-  currentRepo: string = "ARTBlenderLowPolyCharacters";
+  currentRepo: string = "CPPUE5UltGameDevCrs";
   listNotLoadedYet: boolean = true;
 
   constructor(private sharedService: SharedService, private http:HttpClient) { }
