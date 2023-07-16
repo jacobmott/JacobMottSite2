@@ -26,6 +26,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@angular/youtube-player": "^14.1.0",
     "@babylonjs/gui": "^5.26.1",
     "@babylonjs/materials": "^5.26.1",
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",

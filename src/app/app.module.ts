@@ -30,6 +30,9 @@ import { AboutComponent } from './about/about.component';
 import { SlideoutComponent } from './slideout/slideout.component';
 import { SwipercarouselComponent } from './swipercarousel/swipercarousel.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { MyyoutubeComponent } from './myyoutube/myyoutube.component';
+
+import {YouTubePlayerModule} from '@angular/youtube-player';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -47,9 +50,11 @@ export function apiConfigFactory(): Configuration {
     AboutComponent,
     SlideoutComponent,
     SwipercarouselComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    MyyoutubeComponent
   ],
   imports: [
+    YouTubePlayerModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
