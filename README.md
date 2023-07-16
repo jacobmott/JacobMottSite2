@@ -70,3 +70,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## For me
+Push the new version of the site to s3 hosted bucket
+
+Push to bucket
+```
+aws s3 cp --recursive angular-bootstrap-carousel s3://<s3bucket>
+```
