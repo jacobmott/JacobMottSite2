@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -33,6 +35,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { MyyoutubeComponent } from './myyoutube/myyoutube.component';
 
 import {YouTubePlayerModule} from '@angular/youtube-player';
+import { TotalbattleComponent } from './totalbattle/totalbattle.component';
+import { JacobmottComponent } from './jacobmott/jacobmott.component';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -51,7 +55,9 @@ export function apiConfigFactory(): Configuration {
     SlideoutComponent,
     SwipercarouselComponent,
     SpinnerComponent,
-    MyyoutubeComponent
+    MyyoutubeComponent,
+    TotalbattleComponent,
+    JacobmottComponent
   ],
   imports: [
     YouTubePlayerModule,
@@ -65,7 +71,8 @@ export function apiConfigFactory(): Configuration {
     BrowserAnimationsModule,
     MatListModule,
     NgScrollbarModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
   ],
   providers: [
     //GithubService,

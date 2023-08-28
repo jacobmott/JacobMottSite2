@@ -1,0 +1,28 @@
+<div class="container totalbattle">
+    <div class="row">
+        <div class="col-sm-12 form-group">
+            <label for="input1">Leadership(Regular troups)</label>
+            <input type="number" class="form-control" id="input1" placeholder="0" [(ngModel)]="leadership" (input)="somethingChanged($event)">
+            <p>{{ leadership_calculations_lvl4_m_r }}</p>    
+            <p>{{ leadership_calculations_lvl4_melee }}</p>      
+            <p>{{ leadership_calculations_lvl3_m_r }}</p>      
+            <p>{{ leadership_calculations_lvl3_melee }}</p>      
+            <p>{{ leadership_calculations_lvl2_m_r }}</p>      
+            <p>{{ leadership_calculations_lvl2_melee }}</p>                                                               
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 form-group">
+            <label for="input1">Authority(Mercenaries)</label>
+            <input type="number" class="form-control" id="input2" placeholder="0" [(ngModel)]="authority" (input)="somethingChanged($event)">
+            <p>{{ authority_calculations }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 form-group">
+            <label for="input3">Dominance(Monsters)</label>
+            <input type="number" class="form-control" id="input3" placeholder="0" [(ngModel)]="dominance" (input)="somethingChanged($event)">
+            <p>{{ dominance_calculations }}</p>            
+        </div>
+    </div>    
+</div>
