@@ -99,4 +99,4 @@ https://angular.io/guide/aot-compiler
 ### Cloudfront info
 After you build and deploy angular make sure you do cloudfront cache invlidations so cloudfront serves the new files and not cached versions of the files
 
-![image](https://user-images.githubusercontent.com/3318539/194230264-38a3f4fe-2fcc-4522-bd32-1675504f9207.png)
+![image](https://media.githubusercontent.com/media/jacobmott/JacobMottSite2/main/Screenshots/angular-routes-cloudfront-setup-403-404-handling.png)
