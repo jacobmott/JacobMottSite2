@@ -73,9 +73,30 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## For me
+
+### Aws s3 sync files to s3 buckets for deploy
 Push the new version of the site to s3 hosted bucket
 
 Push to bucket
 ```
 aws s3 cp --recursive angular-bootstrap-carousel s3://<s3bucket>
 ```
+
+On windows there is an issue with aws s3 sync, getting the meme type wrong for js files, so we have to upload them seperatly and set the meme type manually when we do
+https://github.com/aws/aws-cli/issues/3367
+```
+aws s3 sync dist/angular-bootstrap-carousel s3://jacobmott.io/ --exclude "*.js" --delete
+aws s3 sync dist/angular-bootstrap-carousel s3://jacobmott.io/ --exclude "*" --include "*.js" --content-type application/javascript --delete
+```
+
+### Bulid info
+Added prod build flag
+https://stackoverflow.com/questions/73156911/ng-build-prod-error-unknown-argument-prod
+
+and ahead of time compilation
+https://angular.io/guide/aot-compiler
+
+### Cloudfront info
+After you build and deploy angular make sure you do cloudfront cache invlidations so cloudfront serves the new files and not cached versions of the files
+
+![image](https://user-images.githubusercontent.com/3318539/194230264-38a3f4fe-2fcc-4522-bd32-1675504f9207.png)

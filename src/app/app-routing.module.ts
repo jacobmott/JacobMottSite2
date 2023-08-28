@@ -6,7 +6,8 @@ import { JacobmottComponent } from './jacobmott/jacobmott.component';
 const routes: Routes = [
   { path: 'totalbattle', component: TotalbattleComponent },
   { path: 'jacobmott',  component: JacobmottComponent},
-  { path: '', redirectTo: 'jacobmott', pathMatch: 'full' }
+  { path: '',  component: JacobmottComponent},
+  // { path: '', redirectTo: 'jacobmott', pathMatch: 'full' }
   ];
 
 @NgModule({
