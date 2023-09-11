@@ -34,9 +34,15 @@ import { SwipercarouselComponent } from './swipercarousel/swipercarousel.compone
 import { SpinnerComponent } from './spinner/spinner.component';
 import { MyyoutubeComponent } from './myyoutube/myyoutube.component';
 
-import {YouTubePlayerModule} from '@angular/youtube-player';
+import  {YouTubePlayerModule } from '@angular/youtube-player';
 import { TotalbattleComponent } from './totalbattle/totalbattle.component';
 import { JacobmottComponent } from './jacobmott/jacobmott.component';
+import { Webangularcompguide2023Component } from './webangularcompguide2023/webangularcompguide2023.component';
+import { PotionsComponent } from './webangularcompguide2023/potions/potions.component';
+import { WeaponsComponent } from './webangularcompguide2023/weapons/weapons.component';
+import { PotionComponent } from './webangularcompguide2023/potions/potion/potion.component';
+import { WeaponComponent } from './webangularcompguide2023/weapons/weapon/weapon.component';
+import { ErrorPageComponent } from './webangularcompguide2023/error-page/error-page.component';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -57,7 +63,13 @@ export function apiConfigFactory(): Configuration {
     SpinnerComponent,
     MyyoutubeComponent,
     TotalbattleComponent,
-    JacobmottComponent
+    JacobmottComponent,
+    Webangularcompguide2023Component,
+    PotionsComponent,
+    WeaponsComponent,
+    PotionComponent,
+    WeaponComponent,
+    ErrorPageComponent
   ],
   imports: [
     YouTubePlayerModule,

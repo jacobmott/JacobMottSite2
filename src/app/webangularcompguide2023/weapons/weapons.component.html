@@ -1,0 +1,16 @@
+<div class="weapons">
+    <div class="row">
+      <div class="col-xs-12">
+        <button
+          class="btn btn-primary"
+          *ngFor="let weapon of weapons"
+          (click)="onClickWeapon(weapon.id)"
+        >
+          {{ weapon.info.name }} {{ weapon.count }}
+        </button>
+        <router-outlet></router-outlet>
+      </div>
+      <!-- <app-potion *ngFor="let potion of potionsTracker" [potion]="potion.potion"></app-potion> -->
+    </div>
+  </div>
+  

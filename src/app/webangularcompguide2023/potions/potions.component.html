@@ -1,0 +1,17 @@
+<div class="potions">
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        *ngFor="let potion of potions"
+        (click)="showPotion(potion.id)"
+      >
+        {{ potion.info.name }} {{ potion.count }}
+      </button>
+      <div *ngIf="haveSelection()">
+        <app-potion [potion]="getPotion()"></app-potion>
+      </div>
+    </div>
+    <!-- <app-potion *ngFor="let potion of potionsTracker" [potion]="potion.potion"></app-potion> -->
+  </div>
+</div>

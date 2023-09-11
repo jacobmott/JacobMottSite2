@@ -4,6 +4,8 @@
 @import "~font-awesome/css/font-awesome.css";
 @import url(~fullpage.js/dist/fullpage.min.css);
 @import "./app/scss/spinner.scss";
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // test
 html,
