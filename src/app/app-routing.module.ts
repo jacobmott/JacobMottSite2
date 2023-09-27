@@ -7,6 +7,7 @@ import { PotionsComponent } from './webangularcompguide2023/potions/potions.comp
 import { WeaponsComponent } from './webangularcompguide2023/weapons/weapons.component';
 import { WeaponComponent } from './webangularcompguide2023/weapons/weapon/weapon.component';
 import { ErrorPageComponent } from './webangularcompguide2023/error-page/error-page.component';
+import { ObserverComponent } from './webangularcompguide2023/observer/observer.component';
 
 const routes: Routes = [
   { path: 'totalbattle', component: TotalbattleComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
         ],
       },
       { path: 'potions', component: PotionsComponent },
+      { path: 'observer', component: ObserverComponent },
     ],
   },
   { path: 'jacobmott', component: JacobmottComponent },

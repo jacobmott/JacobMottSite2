@@ -43,6 +43,7 @@ import { WeaponsComponent } from './webangularcompguide2023/weapons/weapons.comp
 import { PotionComponent } from './webangularcompguide2023/potions/potion/potion.component';
 import { WeaponComponent } from './webangularcompguide2023/weapons/weapon/weapon.component';
 import { ErrorPageComponent } from './webangularcompguide2023/error-page/error-page.component';
+import { ObserverComponent } from './webangularcompguide2023/observer/observer.component';
 
 export function apiConfigFactory(): Configuration {
   const params: ConfigurationParameters = {
@@ -69,7 +70,8 @@ export function apiConfigFactory(): Configuration {
     WeaponsComponent,
     PotionComponent,
     WeaponComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ObserverComponent
   ],
   imports: [
     YouTubePlayerModule,
